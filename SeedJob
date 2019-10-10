@@ -1,4 +1,11 @@
 job('PetiApp') {
-  
-
+    scm {
+        git('git://github.com/quidryan/aws-sdk-test.git')
+    }
+    triggers {
+        scm(0 0/5 * 1/1 * ? *)
+    }
+    steps {
+        maven('-e clean test')
+    }
 }
