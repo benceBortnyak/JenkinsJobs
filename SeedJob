@@ -3,7 +3,7 @@ job('PetiApp') {
         git('https://github.com/farkaspeti/spring_cities')
     }
     triggers {
-        scm(0 0/5 * 1/1 * ? *)
+        scm(*/5 * * * *)
     }
     steps {
         maven('-e clean test')
