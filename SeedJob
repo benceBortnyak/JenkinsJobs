@@ -1,4 +1,4 @@
-job('PetiApp') {
+job {
     scm {
         git('https://github.com/farkaspeti/spring_cities')
     }
