@@ -6,6 +6,6 @@ job(Peti's Repo) {
         scm(*/5 * * * *)
     }
     steps {
-        maven('-e clean test')
+       sh 'mvn test'
     }
 }
