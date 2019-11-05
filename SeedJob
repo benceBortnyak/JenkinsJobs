@@ -1,11 +1,11 @@
 job('Peti Repo') {
     scm {
-        git 'https://github.com/farkaspeti/spring_cities'
+        git 'https://github.com/benceBortnyak/HomeworkIntalion'
     }
     triggers {
         scm '*/5 * * * *'
     }
     steps {
-       sh 'mvn test'
+       'sh doker build . intalion'
     }
 }
