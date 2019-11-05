@@ -1,4 +1,4 @@
-job('Peti's Repo') {
+job('Peti Repo') {
     scm {
         git 'https://github.com/farkaspeti/spring_cities'
     }
