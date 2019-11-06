@@ -1,11 +1,13 @@
+String repo = 'https://github.com/benceBortnyak/' 
+
 job('Peti Repo') {
     scm {
-        git 'https://github.com/benceBortnyak/HomeworkIntalion'
+        repo
     }
     triggers {
         scm '*/5 * * * *'
     }
     steps {
-       'sh doker build . intalion'
+        'sh python3 main.py'
     }
 }
