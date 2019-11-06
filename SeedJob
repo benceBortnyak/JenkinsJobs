@@ -1,5 +1,5 @@
 String repo = 'https://github.com/benceBortnyak/' 
-String jobName = TestHelloWorld
+String jobName = 'TestHelloWorld'
 job(jobName) {
     scm {
         repo
